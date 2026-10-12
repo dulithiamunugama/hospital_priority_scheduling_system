@@ -1,0 +1,25 @@
+id,description,urgency,arrival,deadline,duration,resources
+1,MRI Scan,MEDIUM,0,222,55,Nurse:1
+13,MRI Scan,MEDIUM,0,222,55,Nurse:1
+2,Patient Transfer,CRITICAL,10,42,106,Operating Theatre:1|Surgeon:1|Nurse:2
+14,Patient Transfer,CRITICAL,10,42,106,Operating Theatre:1|Surgeon:1|Nurse:2
+3,Ward Assistance,HIGH,20,126,82,Nurse:1
+15,Ward Assistance,HIGH,20,126,82,Nurse:1
+4,MRI Scan,MEDIUM,30,231,47,Nurse:1|Ambulance:1
+16,MRI Scan,MEDIUM,30,231,47,Nurse:1|Ambulance:1
+5,Bed Allocation,MEDIUM,40,242,36,Nurse:1|Hospital Bed:1
+17,Bed Allocation,MEDIUM,40,242,36,Nurse:1|Hospital Bed:1
+6,Patient Transfer,HIGH,50,194,78,Nurse:1
+18,Patient Transfer,HIGH,50,194,78,Nurse:1
+7,Urgent Surgery,HIGH,60,207,64,Nurse:1|Hospital Bed:1
+19,Urgent Surgery,HIGH,60,207,64,Nurse:1|Hospital Bed:1
+8,CT/MRI Diagnostic,MEDIUM,70,280,43,Nurse:1|Ambulance:1
+20,CT/MRI Diagnostic,MEDIUM,70,280,43,Nurse:1|Ambulance:1
+9,Ward Assistance,MEDIUM,80,372,39,Nurse:1
+21,Ward Assistance,MEDIUM,80,372,39,Nurse:1
+10,Emergency Transfer,LOW,90,459,19,Hospital Bed:1
+22,Emergency Transfer,LOW,90,459,19,Hospital Bed:1
+11,CT/MRI Diagnostic,LOW,100,601,26,Ambulance:1|Hospital Bed:1
+23,CT/MRI Diagnostic,LOW,100,601,26,Ambulance:1|Hospital Bed:1
+12,MRI Scan,LOW,110,606,16,Ambulance:1|Hospital Bed:1
+24,MRI Scan,LOW,110,606,16,Ambulance:1|Hospital Bed:1

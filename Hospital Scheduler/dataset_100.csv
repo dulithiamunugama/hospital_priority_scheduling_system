@@ -1,0 +1,101 @@
+id,description,urgency,arrival,deadline,duration,resources
+1,MRI Scan,MEDIUM,0,222,55,Nurse:1
+51,MRI Scan,MEDIUM,0,222,55,Nurse:1
+2,Patient Transfer,CRITICAL,10,42,106,Operating Theatre:1|Surgeon:1|Nurse:2
+52,Patient Transfer,CRITICAL,10,42,106,Operating Theatre:1|Surgeon:1|Nurse:2
+3,Ward Assistance,HIGH,20,126,82,Nurse:1
+53,Ward Assistance,HIGH,20,126,82,Nurse:1
+4,MRI Scan,MEDIUM,30,231,47,Nurse:1|Ambulance:1
+54,MRI Scan,MEDIUM,30,231,47,Nurse:1|Ambulance:1
+5,Bed Allocation,MEDIUM,40,242,36,Nurse:1|Hospital Bed:1
+55,Bed Allocation,MEDIUM,40,242,36,Nurse:1|Hospital Bed:1
+6,Patient Transfer,HIGH,50,194,78,Nurse:1
+56,Patient Transfer,HIGH,50,194,78,Nurse:1
+7,Urgent Surgery,HIGH,60,207,64,Nurse:1|Hospital Bed:1
+57,Urgent Surgery,HIGH,60,207,64,Nurse:1|Hospital Bed:1
+8,CT/MRI Diagnostic,MEDIUM,70,280,43,Nurse:1|Ambulance:1
+58,CT/MRI Diagnostic,MEDIUM,70,280,43,Nurse:1|Ambulance:1
+9,Ward Assistance,MEDIUM,80,372,39,Nurse:1
+59,Ward Assistance,MEDIUM,80,372,39,Nurse:1
+10,Emergency Transfer,LOW,90,459,19,Hospital Bed:1
+60,Emergency Transfer,LOW,90,459,19,Hospital Bed:1
+11,CT/MRI Diagnostic,LOW,100,601,26,Ambulance:1|Hospital Bed:1
+61,CT/MRI Diagnostic,LOW,100,601,26,Ambulance:1|Hospital Bed:1
+12,MRI Scan,LOW,110,606,16,Ambulance:1|Hospital Bed:1
+62,MRI Scan,LOW,110,606,16,Ambulance:1|Hospital Bed:1
+13,Emergency Surgery,LOW,120,566,27,Ambulance:1|Hospital Bed:1
+63,Emergency Surgery,LOW,120,566,27,Ambulance:1|Hospital Bed:1
+14,Emergency Transfer,LOW,130,542,20,-
+64,Emergency Transfer,LOW,130,542,20,-
+15,Bed Allocation,MEDIUM,140,374,38,Nurse:1|Hospital Bed:1
+65,Bed Allocation,MEDIUM,140,374,38,Nurse:1|Hospital Bed:1
+16,Emergency Transfer,CRITICAL,150,209,79,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+66,Emergency Transfer,CRITICAL,150,209,79,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+17,Ambulance Request,LOW,160,648,22,-
+67,Ambulance Request,LOW,160,648,22,-
+18,Equipment Maintenance,MEDIUM,170,468,36,Nurse:1
+68,Equipment Maintenance,MEDIUM,170,468,36,Nurse:1
+19,Patient Transfer,MEDIUM,180,366,57,Nurse:1|Ambulance:1|Hospital Bed:1
+69,Patient Transfer,MEDIUM,180,366,57,Nurse:1|Ambulance:1|Hospital Bed:1
+20,MRI Scan,LOW,190,637,20,Ambulance:1
+70,MRI Scan,LOW,190,637,20,Ambulance:1
+21,CT/MRI Diagnostic,CRITICAL,200,253,108,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+71,CT/MRI Diagnostic,CRITICAL,200,253,108,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+22,Critical Bed Request,HIGH,210,352,73,Nurse:1|MRI Machine:1
+72,Critical Bed Request,HIGH,210,352,73,Nurse:1|MRI Machine:1
+23,Emergency Transfer,MEDIUM,220,510,38,Nurse:1|Hospital Bed:1
+73,Emergency Transfer,MEDIUM,220,510,38,Nurse:1|Hospital Bed:1
+24,CT/MRI Diagnostic,LOW,230,755,22,-
+74,CT/MRI Diagnostic,LOW,230,755,22,-
+25,Critical Bed Request,LOW,240,790,27,-
+75,Critical Bed Request,LOW,240,790,27,-
+26,Patient Transfer,LOW,250,821,32,Ambulance:1
+76,Patient Transfer,LOW,250,821,32,Ambulance:1
+27,CT/MRI Diagnostic,LOW,260,731,26,Ambulance:1|Hospital Bed:1
+77,CT/MRI Diagnostic,LOW,260,731,26,Ambulance:1|Hospital Bed:1
+28,MRI Scan,LOW,270,770,24,-
+78,MRI Scan,LOW,270,770,24,-
+29,Emergency Surgery,LOW,280,737,32,-
+79,Emergency Surgery,LOW,280,737,32,-
+30,Emergency Surgery,HIGH,290,424,75,Nurse:1|MRI Machine:1|Hospital Bed:1
+80,Emergency Surgery,HIGH,290,424,75,Nurse:1|MRI Machine:1|Hospital Bed:1
+31,Emergency Surgery,MEDIUM,300,560,31,Nurse:1|Ambulance:1|Hospital Bed:1
+81,Emergency Surgery,MEDIUM,300,560,31,Nurse:1|Ambulance:1|Hospital Bed:1
+32,Ambulance Request,HIGH,310,429,58,Nurse:1|MRI Machine:1|Hospital Bed:1
+82,Ambulance Request,HIGH,310,429,58,Nurse:1|MRI Machine:1|Hospital Bed:1
+33,Bed Allocation,CRITICAL,320,362,81,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+83,Bed Allocation,CRITICAL,320,362,81,Operating Theatre:1|Surgeon:1|Nurse:2|Ventilator:1
+34,Urgent Surgery,MEDIUM,330,610,39,Nurse:1
+84,Urgent Surgery,MEDIUM,330,610,39,Nurse:1
+35,Equipment Maintenance,HIGH,340,482,74,Nurse:1|MRI Machine:1
+85,Equipment Maintenance,HIGH,340,482,74,Nurse:1|MRI Machine:1
+36,Ward Assistance,LOW,350,910,33,-
+86,Ward Assistance,LOW,350,910,33,-
+37,Bed Allocation,LOW,360,915,32,Ambulance:1
+87,Bed Allocation,LOW,360,915,32,Ambulance:1
+38,Ward Assistance,HIGH,370,498,57,Nurse:1
+88,Ward Assistance,HIGH,370,498,57,Nurse:1
+39,CT/MRI Diagnostic,LOW,380,921,16,Hospital Bed:1
+89,CT/MRI Diagnostic,LOW,380,921,16,Hospital Bed:1
+40,Ward Assistance,HIGH,390,517,48,Nurse:1
+90,Ward Assistance,HIGH,390,517,48,Nurse:1
+41,Emergency Transfer,LOW,400,980,33,Ambulance:1|Hospital Bed:1
+91,Emergency Transfer,LOW,400,980,33,Ambulance:1|Hospital Bed:1
+42,Emergency Transfer,MEDIUM,410,653,50,Nurse:1
+92,Emergency Transfer,MEDIUM,410,653,50,Nurse:1
+43,Ward Assistance,LOW,420,996,33,Hospital Bed:1
+93,Ward Assistance,LOW,420,996,33,Hospital Bed:1
+44,Equipment Maintenance,LOW,430,915,16,Ambulance:1
+94,Equipment Maintenance,LOW,430,915,16,Ambulance:1
+45,Critical Bed Request,MEDIUM,440,683,38,Nurse:1
+95,Critical Bed Request,MEDIUM,440,683,38,Nurse:1
+46,Patient Transfer,HIGH,450,567,75,Nurse:1|MRI Machine:1
+96,Patient Transfer,HIGH,450,567,75,Nurse:1|MRI Machine:1
+47,Emergency Transfer,MEDIUM,460,706,58,Nurse:1|Ambulance:1|Hospital Bed:1
+97,Emergency Transfer,MEDIUM,460,706,58,Nurse:1|Ambulance:1|Hospital Bed:1
+48,CT/MRI Diagnostic,MEDIUM,470,685,59,Nurse:1|Hospital Bed:1
+98,CT/MRI Diagnostic,MEDIUM,470,685,59,Nurse:1|Hospital Bed:1
+49,Emergency Transfer,HIGH,480,625,80,Nurse:1|MRI Machine:1|Hospital Bed:1
+99,Emergency Transfer,HIGH,480,625,80,Nurse:1|MRI Machine:1|Hospital Bed:1
+50,Urgent Surgery,HIGH,490,614,67,Nurse:1
+100,Urgent Surgery,HIGH,490,614,67,Nurse:1

@@ -1,0 +1,146 @@
+========================================
+ HOSPITAL PRIORITY SCHEDULER
+ Tasks Used: 100
+========================================
+
+[ARRIVAL]  08:00 | TASK1    | MRI Scan
+[ARRIVAL]  08:00 | TASK51   | MRI Scan
+[DISPATCH] 08:01 | TASK1    | Nurse              | Priority: 2.03 | Wait: 1 min | Completes: 08:56
+[DISPATCH] 08:02 | TASK51   | Nurse              | Priority: 2.06 | Wait: 2 min | Completes: 08:57
+[ARRIVAL]  08:10 | TASK2    | Patient Transfer
+[ARRIVAL]  08:10 | TASK52   | Patient Transfer
+[DISPATCH] 08:11 | TASK2    | Operating Theatre  | Priority: 4.05 | Wait: 1 min | Completes: 09:57
+[DISPATCH] 08:12 | TASK52   | Operating Theatre  | Priority: 4.08 | Wait: 2 min | Completes: 09:58
+[ARRIVAL]  08:20 | TASK3    | Ward Assistance
+[ARRIVAL]  08:20 | TASK53   | Ward Assistance
+[DISPATCH] 08:21 | TASK3    | Nurse              | Priority: 3.03 | Wait: 1 min | Completes: 09:43
+[DISPATCH] 08:22 | TASK53   | Nurse              | Priority: 3.06 | Wait: 2 min | Completes: 09:44
+[ARRIVAL]  08:30 | TASK4    | MRI Scan
+[ARRIVAL]  08:30 | TASK54   | MRI Scan
+[DISPATCH] 08:31 | TASK4    | Nurse              | Priority: 2.03 | Wait: 1 min | Completes: 09:18
+[DISPATCH] 08:32 | TASK54   | Nurse              | Priority: 2.06 | Wait: 2 min | Completes: 09:19
+[ARRIVAL]  08:40 | TASK5    | Bed Allocation
+[ARRIVAL]  08:40 | TASK55   | Bed Allocation
+[DISPATCH] 08:41 | TASK5    | Nurse              | Priority: 2.03 | Wait: 1 min | Completes: 09:17
+[DISPATCH] 08:42 | TASK55   | Nurse              | Priority: 2.06 | Wait: 2 min | Completes: 09:18
+[ARRIVAL]  08:50 | TASK6    | Patient Transfer
+[ARRIVAL]  08:50 | TASK56   | Patient Transfer
+[DISPATCH] 08:51 | TASK6    | Nurse              | Priority: 3.03 | Wait: 1 min | Completes: 10:09
+[DISPATCH] 08:52 | TASK56   | Nurse              | Priority: 3.06 | Wait: 2 min | Completes: 10:10
+[COMPLETE] 08:56 | TASK1    | Released: Nurse
+[COMPLETE] 08:57 | TASK51   | Released: Nurse
+[ARRIVAL]  09:00 | TASK7    | Urgent Surgery
+[ARRIVAL]  09:00 | TASK57   | Urgent Surgery
+[DISPATCH] 09:01 | TASK7    | Nurse              | Priority: 3.03 | Wait: 1 min | Completes: 10:05
+[DISPATCH] 09:02 | TASK57   | Nurse              | Priority: 3.06 | Wait: 2 min | Completes: 10:06
+[ARRIVAL]  09:10 | TASK8    | CT/MRI Diagnostic
+[ARRIVAL]  09:10 | TASK58   | CT/MRI Diagnostic
+[DISPATCH] 09:11 | TASK8    | Nurse              | Priority: 2.03 | Wait: 1 min | Completes: 09:54
+[DISPATCH] 09:12 | TASK58   | Nurse              | Priority: 2.06 | Wait: 2 min | Completes: 09:55
+[COMPLETE] 09:17 | TASK5    | Released: Nurse
+[COMPLETE] 09:18 | TASK55   | Released: Nurse
+[COMPLETE] 09:18 | TASK4    | Released: Nurse
+[COMPLETE] 09:19 | TASK54   | Released: Nurse
+[ARRIVAL]  09:20 | TASK9    | Ward Assistance
+[ARRIVAL]  09:20 | TASK59   | Ward Assistance
+[DISPATCH] 09:21 | TASK9    | Nurse              | Priority: 2.03 | Wait: 1 min | Completes: 10:00
+[DISPATCH] 09:22 | TASK59   | Nurse              | Priority: 2.06 | Wait: 2 min | Completes: 10:01
+[ARRIVAL]  09:30 | TASK10   | Emergency Transfer
+[ARRIVAL]  09:30 | TASK60   | Emergency Transfer
+[DISPATCH] 09:31 | TASK10   | Hospital Bed       | Priority: 1.03 | Wait: 1 min | Completes: 09:50
+[DISPATCH] 09:32 | TASK60   | Hospital Bed       | Priority: 1.06 | Wait: 2 min | Completes: 09:51
+[ARRIVAL]  09:40 | TASK11   | CT/MRI Diagnostic
+[ARRIVAL]  09:40 | TASK61   | CT/MRI Diagnostic
+[DISPATCH] 09:41 | TASK11   | Ambulance          | Priority: 1.03 | Wait: 1 min | Completes: 10:07
+[DISPATCH] 09:42 | TASK61   | Ambulance          | Priority: 1.06 | Wait: 2 min | Completes: 10:08
+[COMPLETE] 09:43 | TASK3    | Released: Nurse
+[COMPLETE] 09:44 | TASK53   | Released: Nurse
+[COMPLETE] 09:50 | TASK10   | Released: Hospital Bed
+[ARRIVAL]  09:50 | TASK12   | MRI Scan
+[ARRIVAL]  09:50 | TASK62   | MRI Scan
+[COMPLETE] 09:51 | TASK60   | Released: Hospital Bed
+[COMPLETE] 09:54 | TASK8    | Released: Nurse
+[DISPATCH] 09:54 | TASK12   | Ambulance          | Priority: 1.12 | Wait: 4 min | Completes: 10:10
+[COMPLETE] 09:55 | TASK58   | Released: Nurse
+[DISPATCH] 09:55 | TASK62   | Ambulance          | Priority: 1.15 | Wait: 5 min | Completes: 10:11
+... (further event logs suppressed) ...
+
+========================================
+ PERFORMANCE SUMMARY
+========================================
+Strategy                : Composite (urgency + ageing)
+Task Volume             : 100
+Completed Tasks         : 98
+Dispatched Tasks        : 100
+Throughput              : 9.64 tasks/hour
+Average Waiting Time    : 5.74 minutes
+Missed Deadlines        : 12
+Deadline Miss Rate      : 12.24%
+Starvation Risk Tasks   : 4
+Waiting in Queue        : 0
+Currently Running       : 2
+
+========================================
+ AVERAGE RESOURCE UTILIZATION
+========================================
+Operating Theatre  : 40.87%
+Surgeon            : 20.44%
+Nurse              : 36.07%
+Ambulance          : 38.03%
+MRI Machine        : 64.34%
+Hospital Bed       : 9.80%
+Ventilator         : 21.97%
+Technician         : 0.00%
+========================================
+
+========================================
+ PRIORITY RE-EVALUATION DEMO
+========================================
+
+[ARRIVAL]  08:00 | TASK7    | Urgent Surgery
+[ARRIVAL]  08:00 | TASK99   | Routine Checkup
+[DISPATCH] 08:01 | TASK7    | Operating Theatre  | Priority: 3.03 | Wait: 1 min | Completes: 09:01
+[DISPATCH] 08:02 | TASK99   | Hospital Bed       | Priority: 1.06 | Wait: 2 min | Completes: 08:22
+
+========================================
+ STARVATION WARNING DEMO
+========================================
+
+[ARRIVAL]  08:00 | TASK1    | Long Surgery
+[ARRIVAL]  08:00 | TASK2    | Second Surgery
+[DISPATCH] 08:01 | TASK2    | Operating Theatre  | Priority: 4.03 | Wait: 1 min | Completes: 08:31
+[COMPLETE] 08:31 | TASK2    | Released: Operating Theatre
+[DISPATCH] 08:31 | TASK1    | Operating Theatre  | Priority: 3.93 | Wait: 31 min | Completes: 10:31
+[COMPLETE] 10:31 | TASK1    | Released: Operating Theatre
+
+========================================
+ DEADLINE MISS DEMO
+========================================
+
+[ARRIVAL]  08:00 | TASK1    | Impossible Case
+[DISPATCH] 08:01 | TASK1    | Hospital Bed       | Priority: 1.53 | Wait: 1 min | Completes: 09:01
+[DEADLINE WARNING] TASK1 missed its deadline.
+[COMPLETE] 09:01 | TASK1    | Released: Hospital Bed
+
+========================================
+ STRATEGY COMPARISON (100 tasks)
+========================================
+Strategy                         | Completed | Missed  | Miss%   | AvgWait  
+--------------------------------------------------------------------------------
+FIFO (first-come-first-served)   | 0         | 0       | 0.00  % | 0.00     
+Strict priority (urgency only)   | 0         | 0       | 0.00  % | 0.00     
+Composite (urgency + ageing)     | 0         | 0       | 0.00  % | 0.00     
+--------------------------------------------------------------------------------
+
+Total Execution Time : 151 ms
+
+========================================
+ SCALING TESTS
+========================================
+N Tasks    | Completed | Missed  | Miss%   | AvgWait  
+--------------------------------------------------
+25         | 24        | 2       | 8.33  % | 1.75     
+50         | 50        | 6       | 12.00 % | 2.42     
+100        | 98        | 12      | 12.24 % | 5.74     
+200        | 200       | 20      | 10.00 % | 6.68     
+--------------------------------------------------
